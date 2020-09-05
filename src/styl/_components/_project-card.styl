@@ -1,0 +1,43 @@
+.projects__row
+	margin-left -10px
+	margin-right -10px
+
+.project-card
+	&__col
+		padding-left 10px
+		padding-right 10px
+		padding-bottom 60px
+		width calc(60.145% / 2)
+		
+		&:nth-child(4n+1)
+			width 39.855%
+			.project-card
+				&__thumbnail
+					padding-top 100%
+				&__preview
+					max-width 100%
+					
+		&:nth-child(4n+4)
+			display flex
+			flex-direction column
+			justify-content flex-end
+		
+		
+	&__thumbnail
+		display block
+		margin-bottom 15px
+		padding-top 74%
+		
+	&__title
+		text-transform uppercase
+		font 24px $SBold
+		line-height 29px
+		margin-bottom 5px
+		a
+			color $text-color
+			&:hover
+				opacity .75
+				
+	&__preview
+		max-width 210px
+				

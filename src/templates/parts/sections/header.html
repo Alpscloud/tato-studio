@@ -1,9 +1,21 @@
 <header class="header">
-	<div class="container">
-		<div class="row align-vertical-center header__row">
-			<!-- NAV -->
+	<div class="container header-container">
+		<div class="row align-vertical-center align-horisontal-between header__row">
+			<a href="index.html" class="logo" title="Tato Studio">
+				<img src="img/logo.svg" alt="Tato Studio Логотип">
+			</a>
+
 			{% include '../components/nav.html' %}
-			<!-- //NAV -->
+
+			<ul class="languages hidden-mobile">
+				<li class="languages__item"><a href="#" class="languages__link is-active">UA</a></li>
+				<li class="languages__item"><a href="#" class="languages__link">EN</a></li>
+			</ul>
+
+			<button type="button" class="btn-hamburger js-open-mobile-menu-btn">
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+			</button>
 		</div>
 	</div>
 

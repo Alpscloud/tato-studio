@@ -1,2 +1,50 @@
+.presentation
+	text-transform uppercase
+	font 20px $SBold
+	color $text-color
+	display inline-block
+	max-width 200px
+	span
+		font 18px $SReg
+		
+
+.phones
+	display flex
+	flex-direction column
+	transform translateY(-6px)
+	a
+		display inline-block
+		font 36px $SBold
+		color $text-color
+		margin-bottom 5px
+		&:last-child
+			margin-bottom 0
+		span
+			font 24px $SReg
+			display inline-block
+			
 .footer
-	background-color $footer-bg
+	.socials
+		margin-top 32px
+		
+.mail-link
+	text-transform uppercase
+	color $text-color
+	font 20px $SBold
+			
+
+.socials
+	font-size 0
+	&__item
+		display inline-block
+		margin-right 40px
+		&:last-child
+			margin-right 0
+			
+	&__link
+		display inline-block
+		width 20px
+		height 20px
+		background-position 50% 50%
+		background-size contain
+		background-repeat no-repeat

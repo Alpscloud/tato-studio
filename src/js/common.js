@@ -17,5 +17,31 @@ $(document).ready(function() {
 		}, 200);
 	});
 
+	// ========= Smooth scrolling to the acnhors ===========
+	$('.js-smooth-scroll-link').on('click', 'a', function (e) {
+		e.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top;
+
+		if ($('.js-mobile-menu').hasClass('is-opened')) {
+			$('html').removeClass('is-fixed');
+			$('.js-mobile-menu').removeClass('is-opened');
+			$('.js-open-mobile-menu-btn').removeClass('is-active');
+		}
+
+		$('html, body').animate({scrollTop: top}, 500);
+	});	
+	// ========= =========== =========== ===========
+
+	$('.js-open-mobile-menu-btn').on('click', function(e) {
+		e.preventDefault();
+
+		$(this).toggleClass('is-active');
+
+		$('html').toggleClass('is-fixed');
+		
+		$('.js-mobile-menu').toggleClass('is-opened');
+	});
+
 
 });

@@ -9,3 +9,181 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(1300px)
+	.nav
+		li
+			&:last-child
+				position relative
+				right auto
+				
+
++max-screen(1100px)
+	.nav
+		li
+			margin-right 31px
+			
+	.project-card
+		&__title
+			font-size 20px
+			line-height 24px
+			
+			
++max-screen(767px)
+	.container
+		padding-left 20px
+		padding-right 20px
+		
+	.hidden-mobile
+		display none
+		
+	.visible-mobile
+		display block
+		
+	.header
+		position fixed
+		padding 10px 0
+		top 0
+		background-color $basic-white-color
+		.logo
+			position relative
+			z-index 6
+		
+	.nav
+		position fixed
+		top 0
+		left 0
+		width 100%
+		min-height 100vh
+		margin-left 0
+		background-color $basic-white-color
+		z-index 5
+		overflow-y auto
+		
+		display flex
+		flex-direction column
+		justify-content center
+		
+		padding 150px 20px 80px 20px
+		
+		transition all .17s ease-in-out
+		transform translateX(105%)
+		will-change transform
+		
+		&.is-opened
+			transform translateX(0)
+		
+		&__list
+			overflow hidden
+			margin-right -20px
+			li
+				display block
+				margin-right 0
+				margin-bottom 30px
+				text-align left
+				&:last-child
+					margin-bottom 0
+					
+				&.is-active
+					a
+						&:before
+							width 100%
+					
+			a
+				padding-bottom 15px
+				position relative
+				display inline-block
+				font-size 20px
+				&:before
+					pseudo()
+					height 2px
+					width 1000%
+					background-color $text-color
+					position absolute
+					bottom 0
+					left 0
+					transition width .23s ease-in-out
+				&:hover
+					&:before
+						width 100%
+				
+		.languages
+			margin-top 75px
+			text-align left
+			&__link
+				font-size 12px
+				
+	.title
+		font-size 36px
+		
+
+	.project-card
+		&__col
+			width 100%
+			flex 1 0 50%
+			
++max-screen(700px)
+	.description
+		font-size 20px
+		line-height 27px
+		
+	.slogan
+		font-size 26px
+		line-height 26px
+		margin-top 40px
+		
+	.sect__slogan
+		padding-bottom 100px
+		
+	.footer__col
+		width 100%
+		margin-bottom 60px
+		text-align center
+		&:last-child
+			margin-bottom 0
+			
+	.phones
+		a
+			font-size 24px
+			line-height 29px
+			flex none
+			
+	.mail-link
+		font-size 18px
+		
+	.footer
+		.socials
+			margin-top 30px
+			
+	.presentation
+		font-size 18px
+		line-height 21px
+
+
++max-screen(620px)
+	.title
+		font-size 26px
+		margin-bottom 30px
+		
+	.gutter
+		&-bottom
+			padding-bottom 100px
+		&-top
+			padding-top 100%
+
++max-screen(500px)
+	.project-card
+		&__col
+			width 100%
+			flex 1 0 100%
+			padding-bottom 0
+			margin-bottom 40px
+			&:last-child
+				margin-bottom 0
+				
+	.permalink__wrapper
+		margin-top 60px
+		
++max-screen(400px)
+	.permalink__wrapper
+		.btn
+			width 100%
