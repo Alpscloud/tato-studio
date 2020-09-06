@@ -8,14 +8,22 @@
 +max-screen-height(maxHeight)
 +min-screen-height(minHeight)
 */
++max-screen(1700px)
+	.manifesto
 
+		&-items__row
+			max-width 580px
+			
 +max-screen(1300px)
 	.nav
 		li
 			&:last-child
 				position relative
 				right auto
-				
+	
+	.manifesto
+		background-size 650px
+		
 
 +max-screen(1100px)
 	.nav
@@ -26,6 +34,42 @@
 		&__title
 			font-size 20px
 			line-height 24px
+			
+	.block-404
+		&__row
+			flex-wrap wrap
+		&__text
+			width 100%
+			p
+				max-width 240px
+				
+		&__blockquote
+			margin-top 60px
+	
+
+	// Project
+	.project-body__entering 
+		.content
+			flex none
+			width 100%
+			padding-right 0
+			
+	.project__tags
+		margin-top 50px
+		max-width 100%
+		
++max-screen(1000px)
+	.about-us__row
+		flex-wrap wrap
+		.sect-title
+			width 100%
+			margin-bottom 40px
+			
+	.manifesto-items__row
+		max-width 100%
+		
+	.manifesto
+		padding-bottom 350px
 			
 			
 +max-screen(767px)
@@ -41,7 +85,7 @@
 		
 	.header
 		position fixed
-		padding 10px 0
+		padding 15px 0
 		top 0
 		background-color $basic-white-color
 		.logo
@@ -94,17 +138,9 @@
 				display inline-block
 				font-size 20px
 				&:before
-					pseudo()
-					height 2px
+
 					width 1000%
-					background-color $text-color
-					position absolute
-					bottom 0
-					left 0
-					transition width .23s ease-in-out
-				&:hover
-					&:before
-						width 100%
+					
 				
 		.languages
 			margin-top 75px
@@ -115,12 +151,37 @@
 	.title
 		font-size 36px
 		
+	.btn-hamburger
+		display inline-block
+		
 
 	.project-card
 		&__col
 			width 100%
 			flex 1 0 50%
-			
+	
+	.project
+		padding-top 69px
+		
+		&-description
+			&__content
+				.row
+					flex-wrap wrap
+					
+			&__text
+				flex none
+				width 100%
+				padding-left 0
+				
+				.content
+					max-width 100%
+					width 100%
+					
+	.project-img-fluid
+		.container
+			padding-left 0
+			padding-right 0
+		
 +max-screen(700px)
 	.description
 		font-size 20px
@@ -159,6 +220,37 @@
 		line-height 21px
 
 
+	.block-404
+		&__error
+			font-size 72px
+
+		&__text
+			font-size 14px
+			line-height 17px
+			p
+				max-width 190px
+				
+		&__blockquote
+			margin-top 30px
+			p
+				font-size 36px
+			footer
+				margin-top 30px
+			cite
+				font-size 14px
+			&--col
+				padding-bottom 0
+				margin-bottom 50px
+				
+	.about-us
+		&__statistic
+			&--col
+				width 100%
+				margin-bottom 40px
+				justify-content flex-start
+				&:last-child
+					margin-bottom 0
+
 +max-screen(620px)
 	.title
 		font-size 26px
@@ -166,9 +258,94 @@
 		
 	.gutter
 		&-bottom
-			padding-bottom 100px
+			padding-bottom 60px
 		&-top
-			padding-top 100%
+			padding-top 60px
+			
+	.blockquote
+		.title
+			font-size 30px
+			
+		footer
+			margin-top 40px
+		cite
+			font-size 16px
+			
+	.heading
+		font-size 72px
+		line-height 67px
+		
+	.sect-title
+		font-size 26px
+		line-height 32px
+		margin-bottom 40px
+		
+	.content
+		p
+			font-size 16px
+			line-height 19.5px
+			margin-bottom 20px
+			
+		h3
+			font-size 22px
+			
+	.sect__partners 
+		.description
+			font-size 22px
+			
+		.slogan
+			margin-bottom 40px
+			
+
+	.manifesto-items__row
+		max-width 100%
+		
+	.manifesto
+		background-size 320px
+		padding-bottom 230px
+		padding-top 60px
+		.sect-title
+			margin-bottom 30px
+		&-item
+			font-size 16px
+			line-height 19.5px
+			&__count
+				font-size 30px
+				margin-right 20px
+			&__col
+				width 100%
+				padding-bottom 0
+				margin-bottom 30px
+				&:last-child
+					margin-bottom 0
+					
+	
+		
+
+	.about-us
+		&__statistic
+			font-size 20px
+			line-height 22px
+			p
+				margin-top 20px
+			&--count
+				font-size 72px
+				
+
+	.gutters
+		padding 60px 0
+		
+
+	.project
+		&__title
+			font-size 26px
+			margin-bottom 30px
+			
+	.content
+		h2,h3
+			font-size 22px
+			line-height 23px
+			margin-bottom 40px
 
 +max-screen(500px)
 	.project-card

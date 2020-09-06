@@ -3,21 +3,38 @@
 	margin 0 25px
 	text-align center
 	position relative
-	li
-		display inline-block
-		margin-right 56px
-		&:last-child
-			margin-right 0
-			position absolute
-			right 200px
-			
-		&.is-active
-			a
-				opacity .75
-	
-	a
-		text-transform uppercase
-		color $text-color
-		font 18px $SSemiBold
-		&:hover
-			opacity .75
+	&__list
+		li
+			display inline-block
+			margin-right 56px
+			&:last-child
+				margin-right 0
+				position absolute
+				right 200px
+				
+			&.is-active
+				a
+					&:before
+						width 100%
+		
+		a
+			text-transform uppercase
+			color $text-color
+			font 18px $SSemiBold
+			display inline-block
+			position relative
+			padding-bottom 5px
+			&:before
+				pseudo()
+				height 2px
+				width 0
+				background-color $text-color
+				position absolute
+				bottom 0
+				left 0
+				transition width .23s ease-in-out
+			&:hover
+				opacity 1 !important
+				&:before
+					width 100%
+					

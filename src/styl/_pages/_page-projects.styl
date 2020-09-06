@@ -1,0 +1,69 @@
+.blockquote
+	footer
+		margin-top 60px
+	cite
+		text-transform uppercase
+		font 18px $MMed
+		
+
+.project
+	&__title
+		text-transform uppercase
+		font 36px $MExBold
+		line-height 37px
+		margin-bottom 60px
+		max-width 585px
+		
+	&-body
+		&__entering
+			.content
+				font-size 20px
+				line-height 25px
+				flex 1
+				padding-right 160px
+				
+			p
+				margin-bottom 35px
+				max-width 100%
+				
+	&__tags
+		max-width 410px
+		ul
+			display flex
+			justify-content flex-start
+			font 20px $SSemiBold
+			flex-wrap wrap
+			line-height 25px
+		
+			li
+				margin 0 25px 2px 0
+				
+
+.project-description
+	&:last-child
+		padding-bottom 0
+		
+	&__img
+		flex 1
+		
+	&__text
+		flex 1
+		display flex
+		justify-content center
+		padding-left 20px
+		
+		.content
+			max-width 500px
+			p
+				margin-bottom 35px
+				
+	&__reverse
+		.project-description
+			&__text
+				order 1
+				padding-left 0
+				padding-right  20px
+			&__img
+				order 2
+				
+	

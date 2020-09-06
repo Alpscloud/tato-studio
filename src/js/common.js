@@ -43,5 +43,9 @@ $(document).ready(function() {
 		$('.js-mobile-menu').toggleClass('is-opened');
 	});
 
+	setTimeout(function(){
+		$('body').addClass('is-loaded');
+	}, 1000);
+
 
 });

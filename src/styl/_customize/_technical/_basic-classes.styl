@@ -21,8 +21,8 @@
 	height 100%
 
 .sect-title
-	font 2em $Bold
-	margin-bottom 40px
+	font 36px $MExBold
+	text-transform uppercase
 	
 .title
 	font-family $Bold
@@ -123,10 +123,16 @@
 			
 	h2,h3,h3,h4,h5,h6
 		line-height 1
-		font-family $Bold
+		font-family $MBold
+		text-transform uppercase
 		
 	strong, b
-		font-family $Bold
+		font-family $MBold
+		
+	h3, h2
+		font-size 24px
+		margin-bottom 60px
+	
 		
 
 	ul, ol
@@ -157,10 +163,17 @@
 				display inline-block
 				margin-right 4px
 				
+	p
+		max-width 500px
+		margin-bottom 60px
+				
 .height-100vh
 	min-height 100vh
 	padding 100px 0
 	
 .hidden-desktop
 	display none
+	
+.accent-bg
+	background-color $accent-color
 				
