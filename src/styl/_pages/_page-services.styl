@@ -1,0 +1,85 @@
+.sect__slogan--services
+	padding-top 70px
+	
+	.description
+		font-size 28px
+		line-height 37px
+		
+		a
+			color inherit
+			border-bottom 1px solid
+			&:hover
+				border-color transparent
+				
+		b, strong
+			font-family $MSemiBold
+			
+.sect__services
+	position relative
+
+.services
+	position relative
+	padding-bottom 80px
+	&:before
+		pseudo()
+		position absolute
+		bottom 0
+		width 1160px
+		height 630px
+		background-color $accent-color
+		z-index -1
+		left -455px
+		
+	&-block
+		&:last-child
+			padding-bottom 0
+		
+		&__title
+			text-transform uppercase
+			font 36px $MExBold
+			line-height 103%
+			span
+				display block
+				max-width 405px
+				
+		&__content
+			&--item
+				display flex
+				align-items flex-start
+				justify-content space-between
+				flex-wrap nowrap
+				margin-bottom 35px
+				&:last-child
+					margin-bottom 0
+				
+				&_title
+					text-transform uppercase
+					font 24px $MBold
+					line-height 29px
+					width 50%
+					
+				&_text
+					width 100%
+					flex 1 0 50%
+					
+					b, strong
+						font-family $SSemiBold
+					
+					p
+						font 20px $SReg
+						line-height 122%
+						a
+							color inherit
+							border-bottom 1px solid
+							&:hover
+								border-color transparent
+								
+					ul
+						text-transform uppercase
+						font 18px $SReg
+						line-height 108%
+						
+						li
+							display block
+						
+							

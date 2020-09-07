@@ -58,6 +58,10 @@
 		margin-top 50px
 		max-width 100%
 		
+	.services
+		&:before
+			left -500px
+		
 +max-screen(1000px)
 	.about-us__row
 		flex-wrap wrap
@@ -71,7 +75,18 @@
 	.manifesto
 		padding-bottom 350px
 			
-			
++max-screen(900px)
+	.services
+		&:before
+			display none
+		
+		&-block
+			&__title
+				width 100%
+				margin-bottom 40px
+			&__content
+				width 100%		
+					
 +max-screen(767px)
 	.container
 		padding-left 20px
@@ -250,6 +265,11 @@
 				justify-content flex-start
 				&:last-child
 					margin-bottom 0
+					
+	.sect__promo--services
+		.heading
+			font-size 67px
+			line-height 72px
 
 +max-screen(620px)
 	.title
@@ -346,6 +366,33 @@
 			font-size 22px
 			line-height 23px
 			margin-bottom 40px
+			
+	.services
+
+		&-block
+			&__title
+				font-size 26px
+				line-height 26px
+			&__content
+				width 100%	
+				&--item
+					flex-wrap wrap
+					&_title
+						font-size 22px
+						line-height 27px
+						width 100%
+						margin-bottom 30px
+					&_text
+						ul
+							font-size 16px
+					
+	.sect__slogan--services 
+		.description		
+			font-size 22px
+			line-height 30px
+			
+	.services
+		padding-bottom 10px
 
 +max-screen(500px)
 	.project-card
@@ -359,6 +406,12 @@
 				
 	.permalink__wrapper
 		margin-top 60px
+		
+
+	.sect__promo--services
+		.heading
+			font-size 40px
+			line-height 43px
 		
 +max-screen(400px)
 	.permalink__wrapper
