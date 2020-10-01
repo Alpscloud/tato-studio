@@ -1,18 +1,20 @@
 .languages
-	&__item
+	li
 		display inline-block
 		margin-right 26px
 		&:last-child
 			margin-right 0
-	&__link
+		&.current-lang
+			a
+				font-family $SBold
+	a
 		text-transform uppercase
 		font 18px $SReg
 		color $text-color
 		&:hover
 			opacity .75
 			
-		&.is-active
-			font-family $SBold
+	
 			
 .alm-reveal
 	display flex
