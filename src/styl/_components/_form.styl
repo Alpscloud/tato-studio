@@ -1,43 +1,38 @@
-input[type="search"]
-	appearance none
-	-webkit-appearance none			
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration
-	appearance none
-	-webkit-appearance none
-	backface-visibility hidden
-	transform translate3d(0,0,0)
-
-
 
 
 .form
+	&__wrapper
+		flex 1
+		width 100%
+		max-width 450px
+		min-width 320px
+		
+	.btn
+		width 100%
+		max-width 220px
 	&-input
 		display block
 		width 100%
-		padding 10px 15px
+		padding 19px 20px
+		line-height 17px
 		text-align left
-		background-color $light-color
-		border 2px solid transparent
-		font 1em $Reg
+		border 2px solid $basic-black-color
+		font 16px $MItalic
 		color $text-color
 		&:hover,
 		&:focus
 			border-color $accent-color
 		&::-webkit-input-placeholder
-			font 1em $Reg
+			font 14px $MItalic
 			color $text-color
 		&::-moz-placeholder
-			font 1em $Reg
+			font 14px $MItalic
 			color $text-color
 		&:-moz-placeholder
-			font 1em $Reg
+			font 14px $MItalic
 			color $text-color
 		&:-ms-input-placeholder
-			font 1em $Reg
+			font 14px $MItalic
 			color $text-color
 			
 		&.is-error
@@ -45,7 +40,7 @@ input[type="search"]::-webkit-search-results-decoration
 			
 	&-group
 		position relative
-		margin-bottom 10px
+		margin-bottom 30px
 		&:last-child
 			margin-bottom 0
 			
@@ -55,6 +50,45 @@ input[type="search"]::-webkit-search-results-decoration
 			
 	&-textarea
 		min-height 200px
+		
+	&-file
+		display inline-block
+		position relative
+		cursor pointer
+		padding-left 39px
+		&:before
+			pseudo()
+			position absolute
+			vertical-center()
+			left 0
+			width 24px
+			height 24px
+			background url('../img/icons/svg/file.svg') no-repeat / contain
+		input
+			display none
+			
+		&__text
+			display inline
+			border-bottom 1px solid
+			font 14px $MItalic
+			transition color .17s ease-in-out
+		&__name
+			display none
+			position absolute
+			top 100%
+			left 0
+			margin-top 5px
+			font 12px $MItalic
+			pointer-events none
+			&.is-active
+				display inline-block
+			
+		&:hover
+			color $accent-color
+			.form-file__name
+				color $text-color
+			
+			
 	
 
 

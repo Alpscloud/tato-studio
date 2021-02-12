@@ -218,7 +218,47 @@
 		<!-- //Main -->
 
 		<!-- Footer -->
-		<footer class="footer gutter-bottom" id="contacts">
+		<section class="sect__form">
+	<div class="container">
+		<div class="row align-vertical-start align-horisontal-between form__row">
+			<h2 class="form__title">давайте<br>працювати</h2>
+
+			<div class="form__wrapper">
+				<form class="form" enctype="multipart/form-data">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Tato.agency">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="Contact form">
+					<!-- // Hidden inputs -->
+
+					<div class="form-group">
+						<input type="text" class="form-input js-required-input" name="name" placeholder="Як вас звати?">
+					</div>
+
+					<div class="form-group">
+						<input type="tel" class="form-input js-required-input" name="phone" placeholder="Тел. +38 (_ _ _)  _ _ _ - _ _ - _ _">
+					</div>
+
+					<div class="form-group">
+						<input type="email" class="form-input" name="email" placeholder="Email">
+					</div>
+
+					<div class="form-group">
+						<label class="form-file">
+							<input type="file"  name="fileFF[]">
+							<span class="form-file__text">Додати документ або презентацію</span>
+							<span class="form-file__name">Обрано файл: </span>
+						</label>
+					</div>
+
+					<button class="btn btn-accent" type="submit">надіслати</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- //container -->
+</section>
+<footer class="footer gutter-bottom" id="contacts">
 	<div class="container">
 		<div class="row align-horisontal-between align-vertical-start footer__row">
 			<div class="footer__col">
@@ -251,13 +291,8 @@
 
 
 		<!-- Preloader -->
-		<div class="preloader__wrapper">
+		<!-- <div class="preloader__wrapper">
 	<div class="preloader">
-		<!-- <div class="rect1 rect"></div>
-		<div class="rect2 rect"></div>
-		<div class="rect3 rect"></div>
-		<div class="rect4 rect"></div>
-		<div class="rect5 rect"></div> -->
 
 		<div class="preloader-logo">
 			<svg viewBox="0 0 87 30" xmlns="http://www.w3.org/2000/svg">
@@ -276,7 +311,7 @@
 	</div>
 	<div class="preloader__section preloader__section--left"></div> 
 	<div class="preloader__section preloader__section--right"></div>
-</div>		
+</div>		 -->
 		<!--// Preloader -->
 
 	</div>
@@ -284,10 +319,9 @@
 
 	<!-- jQuery IF NEEDED-->
 <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<!-- Google map -->
-<!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBR5vIGzW3iFwxgUDP3TEFZR66J5LzJdhY"></script> -->
+
 <!-- All libs scripts -->
-<!-- 	<script src="js/libs.min.js"></script> -->
+<script src="js/libs.min.js"></script>
 <!-- Main file with scripts -->
 <script src="js/common.min.js"></script>
 
